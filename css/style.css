@@ -92,7 +92,7 @@ header .navbar a{
     color:var(--light-color);
 }
 header .navbar .glf-button {
-    align-items: center;
+   
     background: var(--green);
 }
 
