@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --green:#27ae60;
+    --green:#d8b30e;
     --black:#192a56;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -92,7 +92,9 @@ header .navbar a{
     color:var(--light-color);
 }
 header .navbar .glf-button {
-   
+    position: relative;
+    margin-top: -6px;
+    font-size: 2em;
     background: var(--green);
 }
 
@@ -185,10 +187,13 @@ header .icons #menu-bars{
     flex-wrap: wrap;
     gap:2rem; 
     padding-top: 9rem;
+
 }
 
 .home .home-slider .slide .content{
     flex:1 1 45rem;
+    overflow: hidden;
+    
 }
 
 .home .home-slider .slide .image{
@@ -197,16 +202,19 @@ header .icons #menu-bars{
 
 .home .home-slider .slide .image img{
     width: 100%;
+
 }
 
 .home .home-slider .slide .content span{
     color:var(--green);
     font-size: 2.5rem;
+    overflow: hidden;
 }
 
 .home .home-slider .slide .content h3{
     color:var(--black);
     font-size: 7rem;
+    overflow: hidden;
 }
 
 .home .home-slider .slide .content p{
@@ -214,6 +222,7 @@ header .icons #menu-bars{
     font-size: 2.2rem;
     padding:.5rem 0;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .swiper-pagination-bullet-active{
@@ -536,6 +545,11 @@ header .icons #menu-bars{
 .order form .btn{
     margin-top: 0;
 }
+.map {
+   
+   
+    position: relative;    
+}
 
 .footer .box-container{
     display: grid;
@@ -649,7 +663,7 @@ header .icons #menu-bars{
 
 }
 
-@media (max-width:768px){
+@media (max-width:1168px){
 
     header .icons #menu-bars{
         display: inline-block;
