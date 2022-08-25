@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-    --green:#d8b30e;
+    --green:#bd7b1a;
     --black:#192a56;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -84,6 +84,22 @@ section:nth-child(even){
     padding-bottom: 5rem;
     margin-bottom: 5rem;
 }
+
+.chinois .sub-heading3{
+    text-align: center;
+    color:var(--green);
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+}
+.chinois .sub-heading2{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+}
 .dessert .sub-heading3{
     text-align: center;
     color:var(--green);
@@ -153,7 +169,7 @@ header{
 
 header .logo{
     color:var(--black);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
@@ -785,6 +801,102 @@ header .icons #menu-bars{
     letter-spacing: .1rem;
 }
 
+/* chinois */
+
+.chinois .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.chinois .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.chinois .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.chinois .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.chinois .box-container .box .image .fa-heart{
+    position: absolute;
+    top:2.5rem; right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color:var(--black);
+}
+
+.chinois .box-container .box .image .fa-heart:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.chinois .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.chinois .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.chinois .box-container .box .content .stars i{
+   font-size: 1.7rem;
+   color:var(--green);
+}
+
+.chinois .box-container .box .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.chinois .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 2rem;
+    padding:.5rem 0;
+  
+}
+
+.chinois .box-container .box .content .price{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.chinois .box-container .box .content .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 2.3rem;
+}
+.chinois .box-container .box .content .btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
 /* dessert */
 
 .dessert .box-container{
@@ -880,6 +992,7 @@ header .icons #menu-bars{
     background: var(--green);
     letter-spacing: .1rem;
 }
+
 /* boisson */
 .boisson .box-container{
     display: grid;
@@ -1322,7 +1435,7 @@ header .icons #menu-bars{
 
 }
 
-@media (max-width:1168px){
+@media (max-width:1287px){
 
     header .icons #menu-bars{
         display: inline-block;
