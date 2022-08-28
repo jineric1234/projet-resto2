@@ -9,6 +9,7 @@ menu.onclick = () =>{
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .navbar a');
 
+
 window.onscroll = () =>{
 
   menu.classList.remove('fa-times');
@@ -111,7 +112,7 @@ function loader(){
 }
 
 function fadeOut(){
-  setInterval(loader, 3000);
+  setInterval(loader, 2500);
 }
 
 window.onload = fadeOut;
